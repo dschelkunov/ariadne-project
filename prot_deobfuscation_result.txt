@@ -1,0 +1,25 @@
+//******************************************************************************************
+// AIR C:\Temp\alfEC26.tmp
+//******************************************************************************************
+
+
+
+
+MC: Id = { 0x3, 0x0, 0x0, uninit, uninit }, offset = uninit, size = uninit;
+MC: Id = { 0x5, 0x0, 0x3e9, uninit, uninit }, offset = uninit, size = 0x0;
+var0 : MC: Id = { 0x6, 0x0, 0x2b7a, uninit, uninit }, offset = uninit, size = 0x4;
+var1 : MC: Id = { 0x6, 0x0, 0x3c8a, uninit, uninit }, offset = uninit, size = 0x4;
+var2 : MC: Id = { 0x6, 0x0, 0x4966, uninit, uninit }, offset = uninit, size = 0x4;
+var3 : MC: Id = { 0x6, 0x0, 0x8714, uninit, uninit }, offset = 0xfffffff0, size = 0x4;
+
+
+
+--------------------------------------------------------------------------------------------------------------
+{ 0x1, 0x0, 0x1166, uninit, uninit }: FUNC  memory_cell ( { 0x5, 0x0, 0x3e9, uninit, uninit } );
+--------------------------------------------------------------------------------------------------------------
+{ 0x2, 0x0, 0x7c85, uninit, uninit }: var0 = %esp +  0x4;
+{ 0x2, 0x0, 0xb0bc, uninit, uninit }: var1 = dword ptr *%esp + dword ptr *var0;
+{ 0x2, 0x0, 0xd841, uninit, uninit }: var2 = %esp +  0x8;
+{ 0x2, 0x0, 0x10e57, uninit, uninit }: var3 = var1 ^ dword ptr *var2;
+{ 0x2, 0x0, 0x18153, uninit, uninit }: %eax =  var3;
+{ 0x2, 0x0, 0x1815c, uninit, uninit }: goto  4_bytes_reloc_imm 0x40116b;
